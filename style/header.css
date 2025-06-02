@@ -5,7 +5,6 @@
     max-width: 100vh;
       height: 900px;
 } */
-
 html, body {
       margin: 0;
       padding: 0;
@@ -15,5 +14,5 @@ html, body {
 
     #map {
       width: 100vw;
-      height: 100vh;
+      height: calc(100vh - 120px); /* оставим 60px снизу */
     }
