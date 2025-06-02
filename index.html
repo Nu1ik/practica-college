@@ -4,25 +4,17 @@
 <head>
   <title>Карта Актау — Яндекс</title>
   <meta charset="utf-8" />
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=2842764b-34f4-403c-8f65-d830c1d34480&lang=ru_RU" type="text/javascript"></script>
   <link rel="stylesheet" href="style/header.css">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-    }
-
-    #map {
-      width: 100vw;
-      height: calc(100vh - 150px); /* оставим 60px снизу */
-    }
-  </style>
 </head>
 <body>
   <div id="map"></div>
-
+  <div class="managment">
+    <button class="managment__but">
+      <img src="img/material-symbols-light_map-outline-rounded.png" alt="" class="managment__but-image">
+      <p class="managment__but-par">Карта</p>
+    </button>
+  </div>
   <script>
     ymaps.ready(init);
     function init(){
@@ -31,10 +23,17 @@
         zoom: 13
       });
 
-     
+     if (window.innerWidth <= 480) {
+      ymaps.ready(function () {
+        var map = new ymaps.Map("map", {
+          center: [43.6411, 51.1989],
+          zoom: 13
+        })});
 
       map.geoObjects.add(placemark);
+      }
     }
+    
   </script>
 </body>
 </html>
