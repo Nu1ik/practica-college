@@ -1,12 +1,34 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
-    <link rel="stylesheet" href="style/header.css">
+  <title>Карта Актау — Яндекс</title>
+  <meta charset="utf-8" />
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <style>
+    #map {
+      max-width: 480px;
+      height: 500px;
+    }
+  </style>
 </head>
 <body>
-    
+  <div id="map"></div>
+
+  <script>
+    ymaps.ready(init);
+    function init(){
+      var map = new ymaps.Map("map", {
+        center: [43.6411, 51.1989],
+        zoom: 13
+      });
+
+      var placemark = new ymaps.Placemark([43.6411, 51.1989], {
+        balloonContent: 'Актау, Казахстан'
+      });
+
+      map.geoObjects.add(placemark);
+    }
+  </script>
 </body>
 </html>
