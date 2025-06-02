@@ -5,10 +5,18 @@
   <title>Карта Актау — Яндекс</title>
   <meta charset="utf-8" />
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <link rel="stylesheet" href="style/header.css">
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
     #map {
-      max-width: 480px;
-      height: 500px;
+      width: 100vw;
+      height: 100vh;
     }
   </style>
 </head>
@@ -23,9 +31,7 @@
         zoom: 13
       });
 
-      var placemark = new ymaps.Placemark([43.6411, 51.1989], {
-        balloonContent: 'Актау, Казахстан'
-      });
+     
 
       map.geoObjects.add(placemark);
     }
