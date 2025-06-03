@@ -9,12 +9,32 @@ html, body {
     #map {
         display: none;
       width: 100vw;
-      height: calc(100vh - 120px); /* оставим 60px снизу */
+      height: calc(100vh - 120px); 
     }
-  @media screen and (max-width: 480px) {
-    #map{
+
+
+
+    .managment {
+      display: none;
+      }
+  @media (max-width: 480px) {
+      #map{
         display: block;
-    }
+      }
+          .managment {
+            display: block;
+      }
+      .managment__but {
+        max-width: 150px;
+        width: 100%;
+        height: 100vh; /* 100% высоты viewport (окна браузера) */
+    width: 100%; /* на всю ширину */
+    font-size: 2rem;
+      }
+      .managment__but-image {
+      }
+      .managment__but-par {
+      }
   }
     @media screen and (min-width: 481px) {
       #placeholder {
