@@ -23,6 +23,8 @@ html, body {
       }
           .managment {
             display: block;
+            display: flex;
+            justify-content: space-around;
       }
       .managment__but {
         max-width: 100px;
@@ -38,6 +40,8 @@ html, body {
         background-color: rgb(240, 238, 238);
       }
       .managment__but-image {
+        max-width: 24px;
+        max-height: 24px;
       }
       .managment__but-par {
         margin: 0;
