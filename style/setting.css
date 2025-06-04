@@ -19,17 +19,29 @@ body{
 }
 
 
+    .lang{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
 
+    #language-container{
+        display: grid;
+  place-items: center; /* Центрирует и по горизонтали, и по вертикали */
 
-
+        
+    }
 
 #language-menu {
-      display: none;
-      position: absolute;
-      background: white;
-      border: 1px solid #ccc;
-      padding: 5px;
-    }
+  display: none;      /* по умолчанию скрыто */
+  flex-direction: column;
+  position: absolute; /* чтобы меню не ломало верстку */
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-top: 15%;
+}
     #language-menu button {
       display: block;
       width: 100%;
