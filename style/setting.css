@@ -22,10 +22,12 @@ body {
 
     body{
         display: block;
-        margin: 0 15% 0 15%;
+        
     }
 
-    
+    .conteiner{
+        margin: 0 15% 0 15%;
+    }
 
     .header {
         display: flex;
@@ -90,4 +92,30 @@ body {
     #sun-moon-icon{
         max-height: 17px;
     }
+
+    .managment {
+            display: block;
+            display: flex;
+            justify-content: space-around;
+      }
+      .managment__but {
+        max-width: 100px;
+        width: 100%;
+        height: 10vh; 
+        width: 100%; 
+        font-size: 1rem; 
+        background-color: white;
+        border: 0;
+      }
+
+      .managment__but:active{
+        background-color: rgb(240, 238, 238);
+      }
+      .managment__but-image {
+        max-width: 24px;
+        max-height: 24px;
+      }
+      .managment__but-par {
+        margin: 0;
+      }
 }
