@@ -15,8 +15,10 @@ body{
 body {
   background-color: var(--color-bg);
   color: var(--color-body);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+
 
 @media (max-width: 480px) {
 

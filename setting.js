@@ -95,3 +95,8 @@ styleToggle.addEventListener('click', () => {
 if (localStorage.getItem('styleMode') === 'dark') {
   document.body.classList.add('darkstyle');
 }
+
+if (localStorage.getItem('styleMode') === 'dark') {
+  document.body.classList.add('darkstyle');
+}
+

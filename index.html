@@ -36,7 +36,9 @@
      
       map.geoObjects.add(placemark);
       }
-    
+    if (localStorage.getItem('styleMode') === 'dark') {
+  document.body.classList.add('darkstyle');
+}
     
   </script>
 </body>

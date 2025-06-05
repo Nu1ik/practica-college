@@ -12,7 +12,21 @@ html, body {
       height: calc(100vh - 120px); 
     }
 
+:root {
+  --color-bg: white;
+  --color-body: black;
+}
 
+.darkstyle {
+  --color-bg: #353535;
+  --color-body: white;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-body);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
     .managment {
       display: none;
