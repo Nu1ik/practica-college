@@ -8,7 +8,7 @@ body{
 }
 
 .darkstyle {
-  --color-bg: black;
+  --color-bg: #353535;
   --color-body: white;
 }
 
@@ -76,8 +76,7 @@ body {
 
     .dark-mode_switch{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between;align-items: center;
     }
 
     .dark-mode_button{

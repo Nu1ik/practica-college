@@ -91,3 +91,7 @@ styleToggle.addEventListener('click', () => {
     enableDarkStyle();
   }
 });
+
+if (localStorage.getItem('styleMode') === 'dark') {
+  document.body.classList.add('darkstyle');
+}
