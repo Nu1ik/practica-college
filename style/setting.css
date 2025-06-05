@@ -2,6 +2,22 @@ body{
     display: none;
 }
 
+:root {
+  --color-bg: white;
+  --color-body: black;
+}
+
+.darkstyle {
+  --color-bg: black;
+  --color-body: white;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-body);
+  transition: background-color 0.3s, color 0.3s;
+}
+
 @media (max-width: 480px) {
 
     body{
@@ -33,6 +49,11 @@ body{
         
     }
 
+    #language-button{
+        background-color: white;
+        border: 0px;
+    }
+
 #language-menu {
   display: none;      /* по умолчанию скрыто */
   flex-direction: column;
@@ -50,5 +71,24 @@ body{
       padding: 5px;
       text-align: left;
       cursor: pointer;
+    }
+
+
+    .dark-mode_switch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dark-mode_button{
+        background-color: white;
+        border: 0px;
+        max-height: 30px ;
+        border-radius: 10px;
+        
+    }
+    
+    #sun-moon-icon{
+        max-height: 17px;
     }
 }

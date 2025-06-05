@@ -7,6 +7,7 @@
     <title>setting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/setting.css">
+    <link rel="stylesheet" href="setting.js">
 </head>
 
 <body>
@@ -25,72 +26,21 @@
         </div>
     </article>
 
+    <div class="dark-mode_switch">
+        <p data-i18n="designtheme">Тема оформления </p>
+  <button class="dark-mode_button">
+    <img id="toggle-icon" src="img-setting/Group 3.png" alt="переключатель">
+    <img id="sun-moon-icon" src="img-setting/sun 1.png" alt="иконка солнца">
+  </button>
+
+  
+</div>
 
 
 
 
 
-    <script>
-        const translations = {
-                ru: {
-                    setting: "Настройки",
-                    langbut: "Язык",
-                    button: "Русский"
-                },
-                kz: {
-                    setting: "Орнатулар",
-                    langbut: "Тіл",
-                    button: "Казакша"
-                }
-};
-
-        let currentLang = 'ru';
-
-        function toggleMenu() {
-    const menu = document.getElementById('language-menu');
-    if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'flex';
-    }
-}
-
-        function setLanguage(lang) {
-            currentLang = lang;
-            //document.getElementById('greeting').textContent = translations[lang].greeting;
-
-
-            const elements = document.querySelectorAll('[data-i18n]');
-            elements.forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                el.textContent = translations[lang][key] || key;
-            });
-            document.getElementById('language-button').textContent = translations[lang].button;
-
-
-            // Меняем меню: если выбрал казахский, выпадает "Русский"
-            const menu = document.getElementById('language-menu');
-            menu.innerHTML = '';
-            const otherLang = lang === 'ru' ? 'kz' : 'ru';
-            const btn = document.createElement('button');
-            btn.textContent = translations[otherLang].button.replace(' ', '');
-            btn.onclick = () => setLanguage(otherLang);
-            menu.appendChild(btn);
-
-            menu.style.display = 'none';
-        }
-
-        // скрытие при клике вне
-        document.addEventListener('click', function (event) {
-            const menu = document.getElementById('language-menu');
-            const button = document.getElementById('language-button');
-            if (!button.contains(event.target) && !menu.contains(event.target)) {
-                menu.style.display = 'none';
-            }
-        });
-
-     
-    </script>
+<script src="setting.js"></script>
 </body>
 
 </html>
