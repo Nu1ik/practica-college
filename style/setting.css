@@ -119,5 +119,6 @@ body {
       }
       .managment__but-par {
         margin: 0;
+        color: black;
       }
 }

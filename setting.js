@@ -27,7 +27,7 @@
         function setLanguage(lang) {
             currentLang = lang;
             //document.getElementById('greeting').textContent = translations[lang].greeting;
-
+            localStorage.setItem('language', lang);
 
             const elements = document.querySelectorAll('[data-i18n]');
             elements.forEach(el => {
@@ -57,7 +57,11 @@
                 menu.style.display = 'none';
             }
         });
-
+        
+        document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('language') || 'ru';
+    setLanguage(savedLang);
+})
 
 
 
