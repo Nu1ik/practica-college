@@ -11,7 +11,8 @@
 </head>
 
 <body>
-        <div class="conteiner">
+  
+        <main class="conteiner">
     <header class="header">
         <p class="header-par" data-i18n="setting">Настройки</p>
     </header>
@@ -32,14 +33,21 @@
     <img id="toggle-icon" src="img-setting/Group 3.png" alt="переключатель">
     <img id="sun-moon-icon" src="img-setting/sun 1.png" alt="иконка солнца">
   </button>
+  </div>
 
-  
-</div>
+
+   <article class="city">
+        <p data-i18n="citybut"></p>
+        <div id="city-container">
+            <button id="city-button" onclick="toggleMenu()">Актау </button>  
+        </div>
+    </article>
+</main>
 
 
 
  
-</div>
+</footer class="footer">
 <div class="managment">
     <button class="managment__but" onclick="window.location.href = 'index.html'">
       <img src="img/material-symbols-light_map-outline-rounded.png" alt="" class="managment__but-image">
@@ -54,7 +62,7 @@
       <p class="managment__but-par" data-i18n="setting">Настройки</p>
     </button>
     
-  </div>
+  </footer>
 <script src="setting.js"></script>
 </body>
 

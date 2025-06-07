@@ -3,13 +3,15 @@
                     setting: "Настройки",
                     langbut: "Язык",
                     button: "Русский",
-                    designtheme: "Тема оформления"
+                    designtheme: "Тема оформления",
+                    citybut: "Город"
                 },
                 kz: {
                     setting: "Орнатулар",
                     langbut: "Тіл",
                     button: "Казакша",
-                    designtheme: "Безендіру тақырыбы"
+                    designtheme: "Безендіру тақырыбы",
+                    citybut: "Қала"
                 }
 };
 

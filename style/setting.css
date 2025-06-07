@@ -29,7 +29,12 @@ body {
 
     .conteiner{
         margin: 0 15% 0 15%;
+        flex: 1;
     }
+
+
+    
+
 
     .header {
         display: flex;
@@ -121,4 +126,19 @@ body {
         margin: 0;
         color: black;
       }
+
+
+
+      .city{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #city-container{
+        display: grid;
+        place-items: center;
+      }
+
+
+      
 }
