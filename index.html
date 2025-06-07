@@ -9,18 +9,16 @@
   <link rel="stylesheet" href="style/header.css">
 </head>
 <body>
+  <main>
   <div id="map"></div>
   
   </div>
 
 
-  <footer class="footer">
-<div class="managment">
-    <button class="managment__but">
-      <img src="img/material-symbols-light_map-outline-rounded.png" alt="" class="managment__but-image">
-      <p class="managment__but-par">Карта</p>
-    </button>
-    <button class="managment__but">
+  </main>
+  <footer id="footer">
+  <div class="managment">
+    <button class="managment__but" onclick="window.location.href = 'index.html'">
       <img src="img/material-symbols-light_map-outline-rounded.png" alt="" class="managment__but-image">
       <p class="managment__but-par">Карта</p>
     </button>
@@ -28,9 +26,8 @@
       <img src="img/icons8-settings-50.png" alt="" class="managment__but-image">
       <p class="managment__but-par" data-i18n="setting">Настройки</p>
     </button>
-    
-
-  </footer>
+  </div> 
+</footer>
   <script>
     ymaps.ready(init);
     function init(){
@@ -51,7 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('language') || 'ru';
     setLanguage(savedLang);
 });
+
+
+
   </script>
+
   <script src="setting.js"></script>
 </body>
 </html>

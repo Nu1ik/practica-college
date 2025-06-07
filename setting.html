@@ -42,18 +42,25 @@
             <button id="city-button" onclick="toggleMenu()">Актау </button>  
         </div>
     </article>
+
+
+
+    <div class="problem">
+      <p>Сообщить о проблеме</p>
+      <div class="problem_img">
+        <img src="" alt="">
+        <p>Telegram-chat</p>
+      </div>
+
+    </div>
 </main>
 
 
 
  
-</footer class="footer">
+<footer id="footer">
 <div class="managment">
     <button class="managment__but" onclick="window.location.href = 'index.html'">
-      <img src="img/material-symbols-light_map-outline-rounded.png" alt="" class="managment__but-image">
-      <p class="managment__but-par">Карта</p>
-    </button>
-    <button class="managment__but">
       <img src="img/material-symbols-light_map-outline-rounded.png" alt="" class="managment__but-image">
       <p class="managment__but-par">Карта</p>
     </button>
@@ -64,6 +71,26 @@
     
   </footer>
 <script src="setting.js"></script>
+
+<script>
+  function fixFooter() {
+    const footer = document.getElementById("footer");
+    const bodyHeight = document.body.offsetHeight;
+    const windowHeight = window.innerHeight;
+
+    if (bodyHeight < windowHeight) {
+      footer.style.position = "absolute";
+      footer.style.bottom = "0";
+      footer.style.left = "0";
+      footer.style.right = "0";
+    } else {
+      footer.style.position = "static";
+    }
+  }
+
+  window.addEventListener("load", fixFooter);
+  window.addEventListener("resize", fixFooter);
+</script>
 </body>
 
 </html>
