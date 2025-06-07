@@ -140,5 +140,21 @@ body {
       }
 
 
-      
+      .problem {
+        display: flex;
+        justify-content: space-between;
+        }
+      .problem_but {
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+   background-color: transparent;
+   border: 0px;
+      }
+
+      .problem_but__img{
+        max-width: 30px;
+        max-height: 30px;
+       
+      }
 }

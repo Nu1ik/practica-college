@@ -4,14 +4,16 @@
                     langbut: "Язык",
                     button: "Русский",
                     designtheme: "Тема оформления",
-                    citybut: "Город"
+                    citybut: "Город",
+                    aboutproblem: "Сообщить о проблеме"
                 },
                 kz: {
                     setting: "Орнатулар",
                     langbut: "Тіл",
                     button: "Казакша",
                     designtheme: "Безендіру тақырыбы",
-                    citybut: "Қала"
+                    citybut: "Қала",
+                    aboutproblem: "Мәселе туралы хабарлау"
                 }
 };
 
@@ -74,15 +76,15 @@ const sunMoonIcon = document.getElementById('sun-moon-icon');
 const enableDarkStyle = () => {
   document.body.classList.add('darkstyle');
   localStorage.setItem('styleMode', 'dark');
-  toggleIcon.src = 'img-setting/Group 4.png'; // замените на иконку для тёмной темы
-  sunMoonIcon.src = 'img-setting/moon 1.png';     // замените на иконку луны
+  toggleIcon.src = 'img-setting/Group 4.png';
+  sunMoonIcon.src = 'img-setting/moon 1.png';     
 };
 
 const disableDarkStyle = () => {
   document.body.classList.remove('darkstyle');
   localStorage.setItem('styleMode', 'light');
-  toggleIcon.src = 'img-setting/Group 3.png';     // иконка для светлой темы
-  sunMoonIcon.src = 'img-setting/sun 1.png';      // иконка солнца
+  toggleIcon.src = 'img-setting/Group 3.png';    
+  sunMoonIcon.src = 'img-setting/sun 1.png';     
 };
 
 // При загрузке страницы применяем сохранённую тему
