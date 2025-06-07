@@ -30,7 +30,7 @@
 
         function setLanguage(lang) {
             currentLang = lang;
-            //document.getElementById('greeting').textContent = translations[lang].greeting;
+            
             localStorage.setItem('language', lang);
 
             const elements = document.querySelectorAll('[data-i18n]');
@@ -41,7 +41,6 @@
             document.getElementById('language-button').textContent = translations[lang].button;
 
 
-            // Меняем меню: если выбрал казахский, выпадает "Русский"
             const menu = document.getElementById('language-menu');
             menu.innerHTML = '';
             const otherLang = lang === 'ru' ? 'kz' : 'ru';
@@ -53,7 +52,7 @@
             menu.style.display = 'none';
         }
 
-        // скрытие при клике вне
+    
         document.addEventListener('click', function (event) {
             const menu = document.getElementById('language-menu');
             const button = document.getElementById('language-button');
@@ -87,7 +86,6 @@ const disableDarkStyle = () => {
   sunMoonIcon.src = 'img-setting/sun 1.png';     
 };
 
-// При загрузке страницы применяем сохранённую тему
 if (localStorage.getItem('styleMode') === 'dark') {
   enableDarkStyle();
 }
