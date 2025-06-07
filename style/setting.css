@@ -21,6 +21,9 @@ body {
 .darkstyle button {
   color: white;
 }
+.darkstyle p {
+  color: white;
+}
 
 @media (max-width: 480px) {
 
@@ -113,7 +116,7 @@ body {
         height: 10vh; 
         width: 100%; 
         font-size: 1rem; 
-        background-color: white;
+        background-color: transparent;
         border: 0;
       }
 

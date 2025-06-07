@@ -71,12 +71,16 @@
 const styleToggle = document.querySelector('.dark-mode_button');
 const toggleIcon = document.getElementById('toggle-icon');
 const sunMoonIcon = document.getElementById('sun-moon-icon');
+const mapIcon = document.getElementById('map-Icon')
+const settingIcon = document.getElementById('setting-Icon')
 
 const enableDarkStyle = () => {
   document.body.classList.add('darkstyle');
   localStorage.setItem('styleMode', 'dark');
   toggleIcon.src = 'img-setting/Group 4.png';
   sunMoonIcon.src = 'img-setting/moon 1.png';     
+  mapIcon.src = 'img-setting/material-symbols-light_map-outline-rounded.png';
+  settingIcon.src = 'img-setting/weui_setting-filled.png';
 };
 
 const disableDarkStyle = () => {
@@ -84,6 +88,8 @@ const disableDarkStyle = () => {
   localStorage.setItem('styleMode', 'light');
   toggleIcon.src = 'img-setting/Group 3.png';    
   sunMoonIcon.src = 'img-setting/sun 1.png';     
+  mapIcon.src = 'img/material-symbols-light_map-outline-rounded.png';
+  settingIcon.src = 'img/icons8-settings-50.png';
 };
 
 if (localStorage.getItem('styleMode') === 'dark') {
