@@ -61,7 +61,7 @@ body {
     }
 
     #language-button{
-        background-color: white;
+        background-color: transparent;
         border: 0px;
     }
 
@@ -91,7 +91,7 @@ body {
     }
 
     .dark-mode_button{
-        background-color: white;
+        background-color: transparent;
         border: 0px;
         max-height: 30px ;
         border-radius: 10px;
@@ -139,6 +139,11 @@ body {
       #city-container{
         display: grid;
         place-items: center;
+      }
+
+      #city-button{
+        background-color: transparent;
+        border: 0px;
       }
 
 
